@@ -1,0 +1,10 @@
+.rtl{
+    direction: rtl !important;
+    font-family: 'Sahel', sans-serif;
+}
+.nav-link{
+    text-align: right;
+}
+.portfolio-modal{
+    direction: rtl;
+}
