@@ -1298,10 +1298,20 @@
 
                             <figure>
                                 <figcaption>گوش دادن به پادکست</figcaption>
-                                <audio controls>
-                                    <source src="assets/podcast/test.mp3" type="audio/mpeg">
+                                <audio controls preload="metadata" onwaiting="showSpinner()" onplaying="hideSpinner()">
+                                    <source src="assets/podcast/EP9MafiaP2.mp3" type="audio/mpeg">
                                     Your browser does not support the audio element.
                                 </audio>
+                                <div id="spinner" style="display:none;">Loading...</div>
+                                <script>
+                                    function showSpinner() {
+                                        document.getElementById('spinner').style.display = 'block';
+                                    }
+                                    function hideSpinner() {
+                                        document.getElementById('spinner').style.display = 'none';
+                                    }
+                                </script>
+
                             </figure>
 
 
